@@ -7,9 +7,11 @@
   "author": "twsau",
   "license": "MIT",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "sass": "^1.54.8"
   },
   "scripts": {
-    "build": "sass"
+    "build": "sass src/global.scss dist/global.css",
+    "dev": "yarn http-server -p 3000"
   }
 }
