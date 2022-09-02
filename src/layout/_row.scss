@@ -1,0 +1,28 @@
+.row {
+  align-items: center;
+  display: flex;
+  gap: var(--size-3);
+  justify-content: space-evenly;
+  padding-block: 1rem;
+  width: 100%;
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.justify-start {
+    justify-content: flex-start;
+  }
+
+  &.justify-end {
+    justify-content: flex-end;
+  }
+
+  & > .mr-auto {
+    margin-right: auto;
+  }
+
+  & > .ml-auto {
+    margin-left: auto;
+  }
+}

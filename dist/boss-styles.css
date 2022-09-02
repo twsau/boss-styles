@@ -1059,5 +1059,77 @@
     transform: scale(0.9);
   }
 }
+:where(html) {
+  --font-sans: "Quantico", sans-serif;
+  --font-serif: "Bungee", cursive;
+}
+
+body {
+  height: 100%;
+}
+
+:where(body > footer, #root > footer) {
+  border-top: 1px solid var(--surface-2);
+  padding-inline: var(--size-3);
+}
+
+header {
+  padding-inline: var(--size-3);
+}
+
+main {
+  min-height: 100%;
+  padding-inline: var(--size-3);
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  gap: var(--size-3);
+  justify-content: space-evenly;
+  padding-block: 1rem;
+  width: 100%;
+}
+.row.justify-center {
+  justify-content: center;
+}
+.row.justify-start {
+  justify-content: flex-start;
+}
+.row.justify-end {
+  justify-content: flex-end;
+}
+.row > .mr-auto {
+  margin-right: auto;
+}
+.row > .ml-auto {
+  margin-left: auto;
+}
+
+section {
+  margin-block: var(--size-7);
+  max-inline-size: var(--size-content-3);
+}
+section > h3 {
+  border-bottom: 1px solid var(--surface-2);
+  text-align: right;
+  margin-block-end: var(--size-3);
+}
+
+label:has(input) {
+  align-items: center;
+  display: flex;
+  gap: var(--size-3);
+  justify-content: flex-end;
+  margin-block: var(--size-3);
+}
+label:has(input) > input {
+  margin-left: auto;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+}
 
 /*# sourceMappingURL=boss-styles.css.map */

@@ -1,0 +1,11 @@
+label:has(input) {
+  align-items: center;
+  display: flex;
+  gap: var(--size-3);
+  justify-content: flex-end;
+  margin-block: var(--size-3);
+
+  & > input {
+    margin-left: auto;
+  }
+}

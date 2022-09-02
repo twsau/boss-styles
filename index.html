@@ -6,38 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>boss-styles</title>
     <link rel="stylesheet" href="./dist/boss-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Quantico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>bossweb.dev<sup> / styles</sup></h1>
+    </header>
     <main>
       <h2>boss-styles</h2>
       <section>
-        <table>
-          <tr>
-            <td>pretty</td>
-            <td><a href="./dist/boss-styles.css">boss-styles.css</a></td>
-            <td>
-              <code>
-                &lt;link rel="stylesheet"
-                href="https://twsau.github.io/boss-styles/dist/boss-styles.css"
-                /&gt;
-              </code>
-            </td>
-          </tr>
-          <tr>
-            <td>minified</td>
-            <td>
-              <a href="./dist/boss-styles.min.css">boss-styles.min.css</a>
-            </td>
-            <td>
-              <code>
-                &lt;link rel="stylesheet"
-                href="https://twsau.github.io/boss-styles/dist/boss-styles.min.css"
-                /&gt;
-              </code>
-            </td>
-          </tr>
-        </table>
+        <h3>links</h3>
+        <div>
+          <a href="./dist/boss-styles.css">boss-styles.css</a>
+        </div>
+        <div>
+          <a href="./dist/boss-styles.min.css">boss-styles.min.css</a>
+        </div>
+      </section>
+      <section>
+        <h3>containers / layout</h3>
+        <h4>rows</h4>
+        <div class="row">
+          <code>.row</code>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div class="row justify-start">
+          <code>.row</code>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div class="row justify-center">
+          <code>.row.center</code>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div class="row justify-end">
+          <code>.row</code>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div class="row">
+          <code class="mr-auto">.row > .mr-auto</code>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </section>
+      <section>
+        <h3>typography</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus
+          assumenda magni error minima labore sequi minus vitae, aut illo,
+          inventore nulla totam natus quia iusto quos? Aliquid, vero velit!
+        </p>
+        <p>
+          Quos amet id, magni incidunt beatae impedit laboriosam rem repellat
+          illo nesciunt repudiandae voluptatibus optio, dignissimos vitae nisi a
+          consequatur hic excepturi ullam molestias accusantium perspiciatis,
+          voluptate harum nobis. Reprehenderit.
+        </p>
+        <p>
+          Illo, illum, soluta, eum doloribus ex esse repellat magnam enim
+          consectetur facere molestias hic expedita quidem tempora! Modi non
+          nesciunt voluptatibus tempore deleniti dolores consequatur. Provident
+          animi voluptatum quae repudiandae.
+        </p>
+        <p>
+          Dolor similique natus quia? Aspernatur tempora ab amet, ducimus modi
+          velit tenetur voluptatibus, dolore dicta sint vitae et porro minima
+          magnam sit dolor aliquam architecto incidunt accusamus eum nemo
+          consequuntur?
+        </p>
+        <p>
+          Obcaecati, suscipit facere. Ipsum assumenda illum debitis quae sequi
+          et qui ut dolorem pariatur aut est saepe reprehenderit fugit,
+          molestiae obcaecati perspiciatis. In facere quos a, aut aspernatur
+          nostrum neque!
+        </p>
+      </section>
+      <section>
+        <h3>inputs</h3>
+        <label>checkbox<input type="checkbox" /></label>
+        <label>date<input type="date" /></label>
+        <label>datetime-local<input type="datetime-local" /></label>
+        <label>email<input type="email" /></label>
+        <label>file<input type="file" /></label>
+        <label><input type="month" /></label>
+        <label>number<input type="number" /></label>
+        <label>password<input type="password" /></label>
+        <label>radio<input type="radio" /></label>
+        <label>range<input type="range" /></label>
+        <label>search<input type="search" /></label>
+        <label>tel<input type="tel" /></label>
+        <label>text<input type="text" /></label>
+        <label>time<input type="time" /></label>
+        <label>url<input type="url" /></label>
+        <label>week<input type="week" /></label>
       </section>
     </main>
     <footer>

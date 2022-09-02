@@ -1,0 +1,10 @@
+section {
+  margin-block: var(--size-7);
+  max-inline-size: var(--size-content-3);
+
+  & > h3 {
+    border-bottom: 1px solid var(--surface-2);
+    text-align: right;
+    margin-block-end: var(--size-3);
+  }
+}
