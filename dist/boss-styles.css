@@ -1064,6 +1064,11 @@
   --font-serif: "Bungee", cursive;
 }
 
+:where(html) {
+  --success: var(--green-3);
+  --error: var(--red-3);
+}
+
 body {
   height: 100%;
 }
@@ -1074,6 +1079,7 @@ body {
 }
 
 header {
+  background-color: var(--surface-2);
   padding-inline: var(--size-3);
 }
 
@@ -1125,6 +1131,21 @@ label:has(input) {
 }
 label:has(input) > input {
   margin-left: auto;
+}
+
+button {
+  border-radius: var(--radius-2);
+}
+button:where(:hover, :focus) {
+  filter: brightness(1.25);
+}
+button[type=submit] {
+  background-color: var(--success);
+  color: var(--surface-1);
+}
+button[type=reset] {
+  background-color: var(--error);
+  color: var(--surface-1);
 }
 
 h1 {

@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <h1>bossweb.dev<sup> / styles</sup></h1>
+      <h1>bossweb.dev<sup> / boss-styles</sup></h1>
     </header>
     <main>
       <h2>boss-styles</h2>
@@ -63,55 +63,38 @@
         </div>
       </section>
       <section>
-        <h3>typography</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus
-          assumenda magni error minima labore sequi minus vitae, aut illo,
-          inventore nulla totam natus quia iusto quos? Aliquid, vero velit!
-        </p>
-        <p>
-          Quos amet id, magni incidunt beatae impedit laboriosam rem repellat
-          illo nesciunt repudiandae voluptatibus optio, dignissimos vitae nisi a
-          consequatur hic excepturi ullam molestias accusantium perspiciatis,
-          voluptate harum nobis. Reprehenderit.
-        </p>
-        <p>
-          Illo, illum, soluta, eum doloribus ex esse repellat magnam enim
-          consectetur facere molestias hic expedita quidem tempora! Modi non
-          nesciunt voluptatibus tempore deleniti dolores consequatur. Provident
-          animi voluptatum quae repudiandae.
-        </p>
-        <p>
-          Dolor similique natus quia? Aspernatur tempora ab amet, ducimus modi
-          velit tenetur voluptatibus, dolore dicta sint vitae et porro minima
-          magnam sit dolor aliquam architecto incidunt accusamus eum nemo
-          consequuntur?
-        </p>
-        <p>
-          Obcaecati, suscipit facere. Ipsum assumenda illum debitis quae sequi
-          et qui ut dolorem pariatur aut est saepe reprehenderit fugit,
-          molestiae obcaecati perspiciatis. In facere quos a, aut aspernatur
-          nostrum neque!
-        </p>
-      </section>
-      <section>
-        <h3>inputs</h3>
-        <label>checkbox<input type="checkbox" /></label>
-        <label>date<input type="date" /></label>
-        <label>datetime-local<input type="datetime-local" /></label>
-        <label>email<input type="email" /></label>
-        <label>file<input type="file" /></label>
-        <label><input type="month" /></label>
-        <label>number<input type="number" /></label>
-        <label>password<input type="password" /></label>
-        <label>radio<input type="radio" /></label>
-        <label>range<input type="range" /></label>
-        <label>search<input type="search" /></label>
-        <label>tel<input type="tel" /></label>
-        <label>text<input type="text" /></label>
-        <label>time<input type="time" /></label>
-        <label>url<input type="url" /></label>
-        <label>week<input type="week" /></label>
+        <h3>forms / inputs</h3>
+        <form>
+          <fieldset>
+            <legend>text</legend>
+            <label>email<input type="email" /></label>
+            <label>number<input type="number" /></label>
+            <label>password<input type="password" /></label>
+            <label>search<input type="search" /></label>
+            <label>tel<input type="tel" /></label>
+            <label>text<input type="text" /></label>
+            <label>url<input type="url" /></label>
+          </fieldset>
+          <fieldset>
+            <legend>time</legend>
+            <label>date<input type="date" /></label>
+            <label>datetime-local<input type="datetime-local" /></label>
+            <label>month<input type="month" /></label>
+            <label>time<input type="time" /></label>
+            <label>week<input type="week" /></label>
+          </fieldset>
+          <fieldset>
+            <legend>other</legend>
+            <label>checkbox<input type="checkbox" /></label>
+            <label>file<input type="file" /></label>
+            <label>radio<input type="radio" /></label>
+            <label>range<input type="range" /></label>
+          </fieldset>
+          <div class="row justify-end">
+            <button type="reset">reset</button>
+            <button type="submit">submit</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer>

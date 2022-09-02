@@ -9,3 +9,21 @@ label:has(input) {
     margin-left: auto;
   }
 }
+
+button {
+  border-radius: var(--radius-2);
+
+  &:where(:hover, :focus) {
+    filter: brightness(1.25);
+  }
+
+  &[type="submit"] {
+    background-color: var(--success);
+    color: var(--surface-1);
+  }
+
+  &[type="reset"] {
+    background-color: var(--error);
+    color: var(--surface-1);
+  }
+}
