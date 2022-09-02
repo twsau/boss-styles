@@ -7,4 +7,26 @@ section {
     text-align: right;
     margin-block-end: var(--size-3);
   }
+
+  &.card {
+    background-color: var(--surface-1);
+    border: 1px solid var(--surface-4);
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-1);
+    padding: var(--size-3);
+  }
+
+  &.primary {
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-1);
+    padding: var(--size-3);
+  }
+
+  &.accent {
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-1);
+    padding: var(--size-3);
+  }
 }
