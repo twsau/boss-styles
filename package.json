@@ -16,6 +16,5 @@
   "scripts": {
     "build": "sass src/boss-styles.scss dist/boss-styles.css && node minify.js",
     "dev": "yarn http-server -p 3000"
-  },
-  "dependencies": {}
+  }
 }
