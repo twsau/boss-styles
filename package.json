@@ -14,7 +14,7 @@
     "sass": "^1.54.8"
   },
   "scripts": {
-    "build": "sass src/global.scss dist/global.css && node minify.js",
+    "build": "sass src/global.scss dist/boss-styles.css && node minify.js",
     "dev": "yarn http-server -p 3000"
   },
   "dependencies": {}

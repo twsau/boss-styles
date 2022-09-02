@@ -10,13 +10,13 @@ const minifyCss = async (css) => {
 };
 
 const writeToFile = (css) => {
-  fs.writeFile("./dist/global.min.css", css, (error) => {
+  fs.writeFile("./dist/boss-styles.min.css", css, (error) => {
     if (error) return console.error(error);
     console.log("success!");
   });
 };
 
-fs.readFile("./dist/global.css", "Utf8", (error, data) => {
+fs.readFile("./dist/boss-styles.css", "Utf8", (error, data) => {
   if (error) return console.error(error);
   minifyCss(data).then(({ css }) => writeToFile(css));
 });
