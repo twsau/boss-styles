@@ -1169,6 +1169,7 @@ label:has(input) > input {
 
 button {
   align-items: center;
+  background-color: var(--primary);
   border-radius: var(--radius-2);
   display: flex;
   gap: var(--size-1);
