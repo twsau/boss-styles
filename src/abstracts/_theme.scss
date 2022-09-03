@@ -1,8 +1,7 @@
-$primary: "orange";
+$primary: "yellow";
 $accent: "green";
 
 :where(html) {
-  // theme
   --primary: var(--#{$primary}-7);
   --accent: var(--#{$accent}-7);
   --success: var(--green-3);

@@ -1065,7 +1065,7 @@
 }
 
 :where(html) {
-  --primary: var(--orange-7);
+  --primary: var(--yellow-7);
   --accent: var(--green-7);
   --success: var(--green-3);
   --error: var(--red-3);
@@ -1080,7 +1080,7 @@
 
 @media (prefers-color-scheme: dark) {
   :where(html) {
-    --primary: var(--orange-3);
+    --primary: var(--yellow-3);
     --accent: var(--green-3);
   }
 }
