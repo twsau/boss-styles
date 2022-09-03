@@ -11,9 +11,12 @@ label:has(input) {
 }
 
 button {
+  align-items: center;
   border-radius: var(--radius-2);
+  display: flex;
+  gap: var(--size-1);
 
-  &:where(:hover, :focus) {
+  &:not(:active):hover {
     filter: brightness(1.25);
   }
 
@@ -25,5 +28,10 @@ button {
   &[type="reset"] {
     background-color: var(--error);
     color: var(--surface-1);
+  }
+
+  &:has(svg:only-child, img:only-child) {
+    background: none;
+    font-size: 2rem;
   }
 }
