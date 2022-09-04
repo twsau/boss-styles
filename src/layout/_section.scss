@@ -1,6 +1,7 @@
 section {
   margin-block: var(--size-7);
   max-inline-size: var(--size-content-3);
+  position: relative;
 
   & > h3 {
     border-bottom: 1px solid var(--surface-2);
@@ -28,5 +29,9 @@ section {
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-1);
     padding: var(--size-3);
+  }
+
+  &>aside {
+    left: 100%;
   }
 }

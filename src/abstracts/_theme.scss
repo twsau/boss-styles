@@ -1,5 +1,6 @@
-$primary: "yellow";
-$accent: "green";
+
+$primary: "teal";
+$accent: "grape";
 
 :where(html) {
   --primary: var(--#{$primary}-7);

@@ -1065,8 +1065,8 @@
 }
 
 :where(html) {
-  --primary: var(--yellow-7);
-  --accent: var(--green-7);
+  --primary: var(--teal-7);
+  --accent: var(--grape-7);
   --success: var(--green-3);
   --error: var(--red-3);
   --link: var(--primary);
@@ -1080,10 +1080,31 @@
 
 @media (prefers-color-scheme: dark) {
   :where(html) {
-    --primary: var(--yellow-3);
-    --accent: var(--green-3);
+    --primary: var(--teal-3);
+    --accent: var(--grape-3);
   }
 }
+article {
+  position: relative;
+}
+
+aside {
+  left: var(--size-md);
+  max-width: var(--size-content-2);
+  position: absolute;
+}
+aside::before {
+  background-color: var(--primary);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  content: "";
+  height: var(--size-5);
+  right: calc(100% + var(--size-2));
+  position: absolute;
+  top: var(--size-2);
+  width: var(--size-5);
+}
+
 body {
   height: 100%;
 }
@@ -1130,6 +1151,7 @@ main {
 section {
   margin-block: var(--size-7);
   max-inline-size: var(--size-content-3);
+  position: relative;
 }
 section > h3 {
   border-bottom: 1px solid var(--surface-2);
@@ -1155,6 +1177,9 @@ section.accent {
   box-shadow: var(--shadow-1);
   padding: var(--size-3);
 }
+section > aside {
+  left: 100%;
+}
 
 label:has(input) {
   align-items: center;
@@ -1169,28 +1194,32 @@ label:has(input) > input {
 
 button {
   align-items: center;
-  background-color: var(--primary);
   border-radius: var(--radius-2);
   display: flex;
   gap: var(--size-1);
 }
-button:not(:active):hover {
+button:not(:active, :disabled):hover {
   filter: brightness(1.25);
 }
 button[type=submit] {
-  background-color: var(--success);
+  background-color: var(--primary);
   color: var(--surface-1);
 }
 button[type=reset] {
-  background-color: var(--error);
+  background-color: var(--accent);
   color: var(--surface-1);
+}
+button:disabled {
+  cursor: not-allowed;
+  filter: brightness(0.5);
+  opacity: 0.25;
 }
 button:has(svg:only-child, img:only-child) {
   background: none;
   font-size: 2rem;
 }
 
-h1 {
+h2 {
   font-family: var(--font-serif);
   font-size: 3rem;
 }
