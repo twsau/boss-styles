@@ -1,6 +1,7 @@
 aside {
   left: var(--size-md);
-  max-width: var(--size-content-2);
+  margin-left: var(--size-8);
+  width: var(--size-content-2);
   position: absolute;
 
   &::before {
@@ -13,5 +14,9 @@ aside {
     position: absolute;
     top: var(--size-2);
     width: var(--size-5);
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
   }
 }

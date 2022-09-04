@@ -41,3 +41,7 @@ button {
     font-size: 2rem;
   }
 }
+
+input[type="file"] {
+  width: min(var(--size-xxs), 100%)
+}

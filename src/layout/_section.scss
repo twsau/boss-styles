@@ -4,44 +4,63 @@ section {
   position: relative;
 
   & > h3 {
-    border-bottom: 1px solid var(--surface-2);
+    border-bottom: 1px solid var(--surface-4);
     text-align: right;
     margin-block-end: var(--size-3);
   }
 
   &:where(.card, .primary, .accent) {
-    border: 1px solid var(--surface-4);
+    border: 1px solid;
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-1);
+    isolation: isolate;
     padding: var(--size-3);
     position: relative;
 
     &::before {
+      background: linear-gradient(
+        to bottom left,
+        rgb(0 0 0),
+        transparent
+      );
+      border-radius: inherit;
       content: "";
       inset: 0;
       opacity: 0.1;
       position: absolute;
       z-index: -1;
     }
+  }
 
-    &::after {
-      background: linear-gradient(to bottom right, var(--primary), transparent);
-      content: "";
-      inset: 0;
-      opacity: 0.1;
-      position: absolute;
+  &.card {
+    border-color: var(--text);
+
+    &::before {
+      background-color: var(--surface-4);
     }
   }
 
-  &.card::before {
-    background-color: var(--surface-4);
+  &.primary {
+    border-color: var(--primary);
+
+    &::before {
+      background-color: var(--primary);
+    }
+
+    & > h3 {
+      color: var(--primary);
+    }
   }
 
-  &.primary::before {
-    background-color: var(--primary);
-  }
+  &.accent {
+    border-color: var(--accent);
 
-  &.accent::before {
-    background-color: var(--accent);
+    &::before {
+      background-color: var(--accent);
+    }
+
+    & > h3 {
+      color: var(--accent);
+    }
   }
 }
