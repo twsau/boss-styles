@@ -1,12 +1,14 @@
 article {
   background-color: var(--surface-1);
   border-right: 1px solid var(--surface-2);
+  box-shadow: var(--shadow-2);
   padding-block-start: var(--size-3);
   padding-inline: var(--size-10);
   position: relative;
 
   @media (max-width: 1440px) {
     border: none;
+    box-shadow: none;
     padding: var(--size-3);
     width: 100%;
   }

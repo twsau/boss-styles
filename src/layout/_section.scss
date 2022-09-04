@@ -12,7 +12,7 @@ section {
   &:where(.card, .primary, .accent) {
     border: 1px solid;
     border-radius: var(--radius-2);
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-2);
     isolation: isolate;
     padding: var(--size-3);
     position: relative;
