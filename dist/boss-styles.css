@@ -1158,27 +1158,28 @@ section > h3 {
   text-align: right;
   margin-block-end: var(--size-3);
 }
-section.card {
-  background-color: var(--surface-1);
+section:where(.card, .primary, .accent) {
   border: 1px solid var(--surface-4);
   border-radius: var(--radius-2);
   box-shadow: var(--shadow-1);
   padding: var(--size-3);
+  position: relative;
 }
-section.primary {
-  border: 1px solid var(--primary);
-  border-radius: var(--radius-2);
-  box-shadow: var(--shadow-1);
-  padding: var(--size-3);
+section:where(.card, .primary, .accent)::before {
+  content: "";
+  inset: 0;
+  opacity: 0.1;
+  position: absolute;
+  z-index: -1;
 }
-section.accent {
-  border: 1px solid var(--accent);
-  border-radius: var(--radius-2);
-  box-shadow: var(--shadow-1);
-  padding: var(--size-3);
+section.card::before {
+  background-color: var(--surface-4);
 }
-section > aside {
-  left: 100%;
+section.primary::before {
+  background-color: var(--primary);
+}
+section.accent::before {
+  background-color: var(--accent);
 }
 
 label:has(input) {
