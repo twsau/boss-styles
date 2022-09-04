@@ -18,11 +18,7 @@ section {
     position: relative;
 
     &::before {
-      background: linear-gradient(
-        to bottom left,
-        rgb(0 0 0),
-        transparent
-      );
+      background: linear-gradient(to bottom left, rgb(0 0 0), transparent);
       border-radius: inherit;
       content: "";
       inset: 0;

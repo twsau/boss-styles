@@ -1085,28 +1085,63 @@
   }
 }
 article {
+  background-color: var(--surface-1);
+  border-left: 1px solid var(--surface-2);
+  border-right: 1px solid var(--surface-2);
+  padding-inline: var(--size-3);
   position: relative;
+  width: min(var(--size-md), 100%);
+}
+@media (max-width: 1440px) {
+  article {
+    border: none;
+    width: 100%;
+  }
 }
 
-aside {
-  left: var(--size-md);
-  margin-left: var(--size-8);
+main > aside {
+  background-color: var(--surface-1);
+  border: 1px solid var(--surface-3);
+  border-radius: 0 var(--radius-2) var(--radius-2) 0;
+  box-shadow: var(--shadow-2);
+  height: fit-content;
+  left: 100%;
+  margin: var(--size-3);
+  padding: var(--size-1);
+  position: sticky;
+  top: var(--size-3);
   width: var(--size-content-2);
-  position: absolute;
 }
-aside::before {
+main > aside::before {
   background-color: var(--primary);
-  border-radius: var(--radius-2);
+  border-radius: var(--radius-2) 0 0 var(--radius-2);
   box-shadow: var(--shadow-2);
   content: "";
-  height: var(--size-5);
-  right: calc(100% + var(--size-2));
+  height: calc(100% + 2px);
+  right: 100%;
   position: absolute;
-  top: var(--size-2);
-  width: var(--size-5);
+  top: -1px;
+  width: var(--size-7);
+  z-index: -1;
 }
-@media (max-width: 1200px) {
-  aside {
+@media (max-width: 1920px) {
+  main > aside {
+    display: none;
+  }
+}
+
+section > aside {
+  background-color: var(--surface-1);
+  border: 1px solid var(--surface-3);
+  border-radius: var(--radius-2);
+  padding: var(--size-2);
+  position: absolute;
+  top: 0;
+  left: var(--size-md);
+  width: var(--size-content-2);
+}
+@media (max-width: 1440px) {
+  section > aside {
     display: none;
   }
 }
@@ -1131,11 +1166,8 @@ header {
 }
 
 main {
-  background-color: var(--surface-1);
+  display: flex;
   min-height: 100%;
-  padding-inline: var(--size-3);
-  width: min(var(--size-md), 100%);
-  border: 1px solid black;
 }
 
 .row {

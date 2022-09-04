@@ -1,7 +1,4 @@
 main {
-  background-color: var(--surface-1);
+  display: flex;
   min-height: 100%;
-  padding-inline: var(--size-3);
-  width: min(var(--size-md), 100%);
-  border: 1px solid black;
 }
