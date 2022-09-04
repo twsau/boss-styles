@@ -2,3 +2,10 @@ h2 {
   font-family: var(--font-serif);
   font-size: 3rem;
 }
+
+:where(h1, h2, h3, h4, h5, h6).text-gradient {
+  background: linear-gradient(var(--primary), var(--accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent
+}

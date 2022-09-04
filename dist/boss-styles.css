@@ -1087,26 +1087,27 @@
 article {
   background-color: var(--surface-1);
   border-right: 1px solid var(--surface-2);
-  padding-inline: var(--size-3);
+  padding-block-start: var(--size-3);
+  padding-inline: var(--size-10);
   position: relative;
-  width: min(var(--size-md), 100%);
 }
 @media (max-width: 1440px) {
   article {
     border: none;
+    padding: var(--size-3);
     width: 100%;
   }
 }
 
 main > aside {
   background-color: var(--surface-1);
-  border: 1px solid var(--surface-3);
+  border: 1px solid var(--surface-2);
   border-radius: 0 var(--radius-2) var(--radius-2) 0;
   box-shadow: var(--shadow-2);
   height: fit-content;
   left: 100%;
   margin: var(--size-3);
-  padding: var(--size-1);
+  padding: var(--size-2);
   position: sticky;
   top: var(--size-3);
   width: var(--size-content-2);
@@ -1131,7 +1132,7 @@ main > aside::before {
 
 section > aside {
   background-color: var(--surface-1);
-  border: 1px solid var(--surface-3);
+  border: 1px solid var(--surface-2);
   border-radius: var(--radius-2);
   padding: var(--size-2);
   position: absolute;
@@ -1153,15 +1154,12 @@ body {
 :where(body > footer, #root > footer) {
   background-color: var(--surface-2);
   border-top: 1px solid var(--surface-2);
-  padding-inline: var(--size-3);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  padding: var(--size-3);
 }
 
 header {
   background-color: var(--surface-2);
-  padding-inline: var(--size-3);
+  padding: var(--size-3);
 }
 
 main {
@@ -1290,6 +1288,13 @@ input[type=file] {
 h2 {
   font-family: var(--font-serif);
   font-size: 3rem;
+}
+
+:where(h1, h2, h3, h4, h5, h6).text-gradient {
+  background: linear-gradient(var(--primary), var(--accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=boss-styles.css.map */

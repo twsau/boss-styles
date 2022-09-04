@@ -1,8 +1,5 @@
 :where(body > footer, #root > footer) {
   background-color: var(--surface-2);
   border-top: 1px solid var(--surface-2);
-  padding-inline: var(--size-3);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  padding: var(--size-3);
 }
