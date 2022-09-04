@@ -23,6 +23,14 @@ section {
       position: absolute;
       z-index: -1;
     }
+
+    &::after {
+      background: linear-gradient(to bottom right, var(--primary), transparent);
+      content: "";
+      inset: 0;
+      opacity: 0.1;
+      position: absolute;
+    }
   }
 
   &.card::before {

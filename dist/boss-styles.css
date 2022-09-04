@@ -1172,6 +1172,13 @@ section:where(.card, .primary, .accent)::before {
   position: absolute;
   z-index: -1;
 }
+section:where(.card, .primary, .accent)::after {
+  background: linear-gradient(to bottom right, var(--primary), transparent);
+  content: "";
+  inset: 0;
+  opacity: 0.1;
+  position: absolute;
+}
 section.card::before {
   background-color: var(--surface-4);
 }
