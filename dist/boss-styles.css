@@ -1087,10 +1087,10 @@
 article {
   background-color: var(--surface-1);
   border-right: 1px solid var(--surface-2);
-  box-shadow: var(--shadow-2);
   padding-block-start: var(--size-3);
   padding-inline: var(--size-10);
   position: relative;
+  width: var(--size-md);
 }
 @media (max-width: 1440px) {
   article {
@@ -1155,21 +1155,24 @@ body {
 }
 
 :where(body > footer, #root > footer) {
+  align-items: center;
   background-color: var(--surface-2);
   border-top: 1px solid var(--surface-2);
+  display: flex;
+  height: 3.5rem;
   padding: var(--size-3);
-  position: absolute;
-  width: 100%;
 }
 
 header {
+  align-items: center;
   background-color: var(--surface-2);
+  display: flex;
+  height: 5rem;
   padding: var(--size-3);
 }
 
 main {
   display: flex;
-  min-height: 100%;
 }
 
 .row {

@@ -1,7 +1,10 @@
 :where(body > footer, #root > footer) {
+  align-items: center;
   background-color: var(--surface-2);
   border-top: 1px solid var(--surface-2);
+  display: flex;
+  height: 3.5rem;
   padding: var(--size-3);
-  position: absolute;
-  width: 100%;
+  // position: sticky;
+  // top: 100vh;
 }
