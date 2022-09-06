@@ -1,4 +1,3 @@
-
 $primary: "teal";
 $accent: "grape";
 
@@ -13,6 +12,10 @@ $accent: "grape";
 
   caret-color: var(--primary);
   outline-color: var(--primary);
+  ::selection {
+    background: var(--primary);
+    color: var(--surface-1);
+  }
 
   :where(a):where([href]) {
     text-decoration-color: var(--primary);

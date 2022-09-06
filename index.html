@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>boss-styles</title>
     <link rel="stylesheet" href="./dist/boss-styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&family=Quantico&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body>
-    <header>
+  <body
+    style="
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+    "
+  >
+    <header style="margin: 1rem">
       <h2 class="text-gradient">bossweb.dev<sup> / boss-styles</sup></h2>
     </header>
     <main>
       <article>
-        <h1>boss-styles</h1>
         <section>
-          <h3>links</h3>
           <div>
             <a href="./dist/boss-styles.css">boss-styles.css</a>
           </div>
@@ -29,162 +29,9 @@
             <a href="./dist/boss-styles.min.css">boss-styles.min.css</a>
           </div>
         </section>
-        <section class="card">
-          <h3>card section</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            veniam magnam eaque cum doloribus tempora dolore. Tempore
-            praesentium pariatur temporibus eum ex perspiciatis dolore,
-            exercitationem quis consequuntur, magnam aliquam eos.
-          </p>
-          <aside>
-            <h5>section > aside</h5>
-            <p>
-              for more information on this section, go read a book or something
-              idk...
-            </p>
-          </aside>
-        </section>
-        <section class="primary">
-          <h3>primary section</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
-            rerum nobis, corporis voluptate exercitationem fugiat sed modi
-            aliquam cupiditate tempora impedit laudantium atque culpa ducimus?
-            Facilis ad dolorem saepe error.
-          </p>
-        </section>
-        <section class="accent">
-          <h3>accent section</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            quos obcaecati quas esse. Incidunt accusamus aspernatur omnis
-            exercitationem ea! Nobis ex magnam quam ullam ut placeat accusantium
-            nisi tenetur pariatur?
-          </p>
-        </section>
-        <section>
-          <h3>containers / layout</h3>
-          <h4>rows</h4>
-          <div class="row">
-            <code>.row</code>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-          <div class="row justify-even">
-            <code>.row.justify-even</code>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-          <div class="row justify-center">
-            <code>.row.justify-center</code>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-          <div class="row justify-end">
-            <code>.row.justify-end</code>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-          <div class="row">
-            <code class="mr-auto">.row > .mr-auto</code>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-        </section>
-        <section>
-          <h3>forms / inputs</h3>
-          <form>
-            <fieldset>
-              <legend>text</legend>
-              <label>email<input type="email" /></label>
-              <label>number<input type="number" /></label>
-              <label>password<input type="password" /></label>
-              <label>search<input type="search" /></label>
-              <label>tel<input type="tel" /></label>
-              <label>text<input type="text" /></label>
-              <label>url<input type="url" /></label>
-            </fieldset>
-            <fieldset>
-              <legend>time</legend>
-              <label>date<input type="date" /></label>
-              <label>datetime-local<input type="datetime-local" /></label>
-              <label>month<input type="month" /></label>
-              <label>time<input type="time" /></label>
-              <label>week<input type="week" /></label>
-            </fieldset>
-            <fieldset>
-              <legend>other</legend>
-              <label>checkbox<input type="checkbox" /></label>
-              <label>file<input type="file" /></label>
-              <label>radio<input type="radio" /></label>
-              <label>range<input type="range" /></label>
-            </fieldset>
-          </form>
-        </section>
-        <section>
-          <h3>buttons</h3>
-          <div class="row justify-end">
-            <button type="reset">reset</button>
-            <button>default</button>
-            <button type="submit" disabled="disabled">submit</button>
-            <button disabled="disabled">disabled</button>
-            <button>
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 24 24"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2V4a8 8 0 1 0 0 16z"
-                  ></path>
-                </g>
-              </svg>
-            </button>
-            <button>
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 24 24"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2V4a8 8 0 1 0 0 16z"
-                  ></path>
-                </g>
-              </svg>
-              <span> icon w/ text </span>
-            </button>
-          </div>
-        </section>
       </article>
-      <aside>
-        <h4>main > aside</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          tempora reprehenderit accusamus omnis nemo nostrum cum qui id
-          reiciendis excepturi, ipsam quas ad accusantium, maxime quia commodi
-          impedit cumque laudantium.
-        </p>
-      </aside>
     </main>
-    <footer>
+    <footer style="margin: 1rem">
       <a href="https://bossweb.dev">bossweb.dev</a>
     </footer>
   </body>
