@@ -1067,7 +1067,7 @@
 
 :where(html) {
   --primary: var(--teal-7);
-  --accent: var(--grape-7);
+  --accent: var(--cyan-7);
   --success: var(--green-3);
   --error: var(--red-3);
   --link: var(--primary);
@@ -1086,7 +1086,7 @@
 @media (prefers-color-scheme: dark) {
   :where(html) {
     --primary: var(--teal-3);
-    --accent: var(--grape-3);
+    --accent: var(--cyan-3);
   }
 }
 label:has(input) {
