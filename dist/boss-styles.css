@@ -1067,8 +1067,8 @@
 }
 
 :where(html) {
-  --primary: var(--teal-7);
-  --accent: var(--cyan-7);
+  --primary: var(--blue-7);
+  --accent: var(--orange-7);
   --success: var(--green-3);
   --error: var(--red-3);
   --link: var(--primary);
@@ -1086,8 +1086,8 @@
 
 @media (prefers-color-scheme: dark) {
   :where(html) {
-    --primary: var(--teal-3);
-    --accent: var(--cyan-3);
+    --primary: var(--orange-3);
+    --accent: var(--blue-3);
   }
 }
 label:has(input) {
@@ -1138,7 +1138,7 @@ h2 {
 }
 
 :where(h1, h2, h3, h4, h5, h6).text-gradient {
-  background: linear-gradient(var(--primary), var(--accent));
+  background: linear-gradient(var(--primary), #888);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

@@ -1,5 +1,5 @@
-$primary: "teal";
-$accent: "cyan";
+$primary: "blue";
+$accent: "orange";
 
 :where(html) {
   --primary: var(--#{$primary}-7);
@@ -24,7 +24,7 @@ $accent: "cyan";
 
 @media (prefers-color-scheme: dark) {
   :where(html) {
-    --primary: var(--#{$primary}-3);
-    --accent: var(--#{$accent}-3);
+    --primary: var(--#{$accent}-3);
+    --accent: var(--#{$primary}-3);
   }
 }
