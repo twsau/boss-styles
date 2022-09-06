@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Quantico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono&family=Quantico&display=swap');
 
 :where(html) {
   --font-sans: "Quantico", sans-serif;
   --font-serif: "Bungee", cursive;
+  --font-mono: "IBM Plex Mono", monospace;
 }
