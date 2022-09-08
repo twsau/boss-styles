@@ -1,25 +1,16 @@
-label:has(input) {
+label:has(input, button) {
   align-items: center;
   display: flex;
   gap: var(--size-3);
   justify-content: flex-end;
   margin-block: var(--size-3);
 
-  & > input {
+  & > :where(button, input) {
     margin-left: auto;
   }
 }
 
 button {
-  align-items: center;
-  border-radius: var(--radius-2);
-  display: flex;
-  gap: var(--size-1);
-
-  &:not(:active, :disabled):hover {
-    filter: brightness(1.25);
-  }
-
   &[type="submit"] {
     background-color: var(--primary);
     color: var(--surface-1);
@@ -30,12 +21,6 @@ button {
     color: var(--surface-1);
   }
 
-  &:disabled {
-    cursor: not-allowed;
-    filter: brightness(0.5);
-    opacity: 0.25;
-  }
-
   &:has(svg:only-child, img:only-child) {
     background: none;
     font-size: 2rem;
@@ -43,5 +28,5 @@ button {
 }
 
 input[type="file"] {
-  width: min(var(--size-xxs), 100%)
+  width: min(var(--size-xxs), 100%);
 }
