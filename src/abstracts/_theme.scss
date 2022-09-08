@@ -10,10 +10,10 @@ $accent: "cyan";
   --link: var(--primary);
   --link-visited: var(--primary);
 
-  caret-color: var(--primary);
-  outline-color: var(--primary);
+  caret-color: var(--accent);
+  outline-color: var(--accent);
   ::selection {
-    background: var(--primary);
+    background: var(--accent);
     color: var(--surface-1);
   }
 
