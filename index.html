@@ -22,11 +22,15 @@
     <main>
       <article>
         <section>
-          <div>
-            <a href="./dist/boss-styles.css">boss-styles.css</a>
+          <div class="row">
+            <span class="icon">download</span>
+            <a download href="./dist/boss-styles.css">
+              pretty
+            </a>
           </div>
-          <div>
-            <a href="./dist/boss-styles.min.css">boss-styles.min.css</a>
+          <div class="row">
+            <span class="icon">download</span>
+            <a download href="./dist/boss-styles.min.css">minified</a>
           </div>
         </section>
       </article>
@@ -44,3 +48,5 @@
     </footer>
   </body>
 </html>
+
+<style>div.row {display: inline-flex; gap: var(--size-2); margin: var(--size-3);}</style>
