@@ -1280,12 +1280,31 @@ input[type=file] {
   width: min(var(--size-xxs), 100%);
 }
 
-h2 {
-  font-family: var(--font-serif);
-  font-size: 3rem;
+:where(body, #root) {
+  height: 100%;
 }
 
-:where(h1, h2, h3, h4, h5, h6).text-gradient {
+@media (max-width: 480px) {
+  .no-mobile {
+    display: none;
+  }
+}
+h2 {
+  font-family: var(--font-serif);
+}
+
+@media (max-width: 768px) {
+  :where(h1, h2, h3, h4, h5, h6) {
+    font-size: 2em;
+  }
+}
+@media (max-width: 480px) {
+  :where(h1, h2, h3, h4, h5, h6) {
+    font-size: 1.5em;
+  }
+}
+
+.text-gradient {
   background: linear-gradient(var(--primary), #888);
   background-clip: text;
   -webkit-background-clip: text;

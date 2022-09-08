@@ -1,9 +1,18 @@
 h2 {
   font-family: var(--font-serif);
-  font-size: 3rem;
 }
 
-:where(h1, h2, h3, h4, h5, h6).text-gradient {
+:where(h1, h2, h3, h4, h5, h6) {
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5em;
+  }
+}
+
+.text-gradient {
   background: linear-gradient(var(--primary), #888);
   background-clip: text;
   -webkit-background-clip: text;

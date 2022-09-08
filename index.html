@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>boss-styles</title>
-    <link rel="stylesheet" href="./dist/boss-styles.css" />
-  </head>
-  <body
-    style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>boss-styles</title>
+  <link rel="stylesheet" href="./dist/boss-styles.css" />
+  <style>
+    div.row {
+      display: flex;
+      gap: var(--size-2);
+      justify-content: center;
+      margin: var(--size-3);
+    }
+  </style>
+</head>
+
+<body style="
       align-items: center;
       display: flex;
       flex-direction: column;
       height: 100%;
       justify-content: space-between;
-    "
-  >
-    <header style="margin: 1rem">
-      <h2 class="text-gradient">bossweb.dev<sup> / boss-styles</sup></h2>
-    </header>
-    <main>
-      <article>
-        <section>
+    ">
+  <header style="margin: 1rem">
+    <h2 class="text-gradient">bossweb.dev<sup class="no-mobile"> / boss-styles</sup></h2>
+  </header>
+  <main>
+    <article>
+      <section>
+        <div class="row">
+          <h1 class="mobile-hide">it's mostly <a href="https://open-props.style/">open-props</a></h1>
+        </div>
+        <div class="row">
+          <!-- <code>https://twsau.github.io/boss-styles/dist/boss-styles.min.css</code> -->
+        </div>
+      </section>
+      <section>
+        <div class="row" style="justify-content: center;">
           <div class="row">
-            <h1>it's mostly <a href="https://open-props.style/">open-props</a></h1>
+            <span class="icon">download</span>
+            <a download href="./dist/boss-styles.css">
+              pretty
+            </a>
           </div>
           <div class="row">
-            <code>https://twsau.github.io/boss-styles/dist/boss-styles.min.css</code>
+            <span class="icon">download</span>
+            <a download href="./dist/boss-styles.min.css">minified</a>
           </div>
-        </section>
-        <section>
-          <div class="row" style="justify-content: center;">
-            <div class="row">
-              <span class="icon">download</span>
-              <a download href="./dist/boss-styles.css">
-                pretty
-              </a>
-            </div>
-            <div class="row">
-              <span class="icon">download</span>
-              <a download href="./dist/boss-styles.min.css">minified</a>
-            </div>
-          </div>
-        </section>
-      </article>
-    </main>
-    <footer
-      style="
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer style="
         display: flex;
         justify-content: space-between;
         padding: 1rem;
         width: 100%;
-      "
-    >
-      <a href="https://github.com/twsau" style="color: var(--accent); text-decoration-color: var(--accent);">twsau</span>
+      ">
+    <a href="https://github.com/twsau" style="color: var(--accent); text-decoration-color: var(--accent);">twsau</span>
       <a href="https://bossweb.dev">bossweb.dev</a>
-    </footer>
-  </body>
-</html>
+  </footer>
+</body>
 
-<style>div.row {display: flex; gap: var(--size-2); margin: var(--size-3);}</style>
+</html>
