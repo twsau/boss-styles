@@ -1252,6 +1252,10 @@ span.icon {
     --accent: var(--indigo-3);
   }
 }
+hr {
+  margin-block: var(--size-5);
+}
+
 label:has(input, button) {
   align-items: center;
   display: flex;
