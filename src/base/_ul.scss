@@ -1,0 +1,7 @@
+ul {
+  list-style: square;
+
+  li::marker {
+    color: var(--accent);
+  }
+}

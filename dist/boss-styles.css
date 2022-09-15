@@ -1284,6 +1284,12 @@ input[type=file] {
   width: min(var(--size-xxs), 100%);
 }
 
+ol > li::marker {
+  color: var(--accent);
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
 :where(body, #root) {
   height: 100%;
 }
@@ -1315,10 +1321,11 @@ h2 {
   color: transparent;
 }
 
-ol > li::marker {
+ul {
+  list-style: square;
+}
+ul li::marker {
   color: var(--accent);
-  font-size: 0.8em;
-  font-weight: 900;
 }
 
 div.row {
