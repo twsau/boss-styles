@@ -1315,4 +1315,53 @@ h2 {
   color: transparent;
 }
 
+div.row {
+  display: flex;
+}
+div.row.gap-i {
+  gap: var(--size-size);
+}
+div.row.padding-i {
+  padding-inline: var(--size-size);
+}
+div.row.gap-i {
+  gap: var(--size-size);
+}
+div.row.padding-i {
+  padding-inline: var(--size-size);
+}
+div.row.gap-i {
+  gap: var(--size-size);
+}
+div.row.padding-i {
+  padding-inline: var(--size-size);
+}
+div.row.gap-i {
+  gap: var(--size-size);
+}
+div.row.padding-i {
+  padding-inline: var(--size-size);
+}
+div.row.gap-i {
+  gap: var(--size-size);
+}
+div.row.padding-i {
+  padding-inline: var(--size-size);
+}
+div.row.justify-center {
+  justify-content: center;
+}
+div.row.justify-around {
+  justify-content: space-around;
+}
+div.row.justify-between {
+  justify-content: space-between;
+}
+div.row.justify-evenly {
+  justify-content: space-evenly;
+}
+div.row.justify-end {
+  justify-content: end;
+}
+
 /*# sourceMappingURL=boss-styles.css.map */
