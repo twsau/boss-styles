@@ -1,15 +1,3 @@
-label:has(input, button) {
-  align-items: center;
-  display: flex;
-  gap: var(--size-3);
-  justify-content: flex-end;
-  margin-block: var(--size-3);
-
-  & > :where(button, input) {
-    margin-left: auto;
-  }
-}
-
 button {
   &[type="submit"] {
     background-color: var(--primary);

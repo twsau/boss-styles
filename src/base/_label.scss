@@ -1,0 +1,10 @@
+label:has(*:only-child) {
+  justify-content: space-between;
+}
+
+label {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-block: var(--size-3);
+}
