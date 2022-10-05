@@ -1,5 +1,6 @@
 label:has(*:only-child) {
   justify-content: space-between;
+  width: 100%;
 }
 
 label {
@@ -7,4 +8,5 @@ label {
   display: flex;
   justify-content: center;
   margin-block: var(--size-3);
+  padding-inline: var(--size-3);
 }

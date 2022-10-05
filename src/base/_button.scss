@@ -1,0 +1,23 @@
+button {
+  background-color: var(--_bg);
+
+  &.error {
+    --_border: var(--error);
+  }
+
+  &.warning {
+    --_border: var(--warning);
+  }
+
+  &.success {
+    --_border: var(--success);
+  }
+
+  &.info {
+    --_border: var(--info);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+  }
+}

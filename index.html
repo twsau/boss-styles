@@ -8,24 +8,31 @@
   <title>boss-styles</title>
   <link rel="stylesheet" href="./dist/boss-styles.css" />
   <style>
-    div.row {
-      display: flex;
-      gap: var(--size-2);
-      justify-content: center;
-      margin: var(--size-3);
-    }
-  </style>
-</head>
-
-<body style="
+    body {
       align-items: center;
+      background-color: var(--surface-1);
       display: flex;
       flex-direction: column;
       height: 100%;
       justify-content: space-between;
-    ">
-  <header style="background: var(--pattern-topography); border: 1px solid var(--surface-4); border-radius: var(--size-1); box-shadow: var(--shadow-2); margin: var(--size-3); padding: var(--size-1);">
-    <h2 class="text-gradient">bossweb.dev<sup class="no-mobile"> / boss-styles</sup></h2>
+    }
+
+    header {
+      padding-block: var(--size-5);
+    }
+
+    div.row {
+      align-items: center;
+      display: flex;
+      gap: var(--size-2);
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>bossweb.dev<sup class="no-mobile"> / boss-styles</sup></h2>
   </header>
   <main>
     <article>
@@ -39,14 +46,77 @@
       </section>
       <section>
         <div class="row justify-center">
-            <span class="icon">download</span>
-            <a download href="./dist/boss-styles.css">
-              pretty
-            </a>
-            <span class="icon">download</span>
-            <a download href="./dist/boss-styles.min.css">minified</a>
+          <span class="icon">download</span>
+          <a download href="./dist/boss-styles.css">
+            pretty
+          </a>
+          <span class="icon">download</span>
+          <a download href="./dist/boss-styles.min.css">minified</a>
         </div>
       </section>
+      <!-- <hr>
+      <section>
+        <div class="row">
+          <h3>buttons</h3>
+        </div>
+        <div class="row">
+          <button class="error">error</button>
+          <button class="warning">warning</button>
+          <button class="success">success</button>
+          <button class="info">info</button>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <h3>labels / inputs</h3>
+        </div>
+        <div class="row">
+          <label>text<input type="text"></label>
+        </div>
+        <div class="row">
+          <label>date<input type="date"></label>
+        </div>
+        <div class="row">
+          <label>checkbox<input type="checkbox"></label>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <h3>patterns</h3>
+        </div>
+        <div class="row" style="background: var(--pattern-topography); border: 1px solid var(--surface-3); border-radius: var(--radius-2); box-shadow: var(--shadow-2); margin-block: var(--size-3);">
+          <h4 style="margin-block: var(--size-3);">topography</h4>
+        </div>
+        <div class="row" style="background: var(--pattern-jigsaw); border: 1px solid var(--surface-3); border-radius: var(--radius-2); box-shadow: var(--shadow-2); margin-block: var(--size-3);">
+          <h4 style="margin-block: var(--size-3);">jigsaw</h4>
+        </div>
+        <div class="row" style="background: var(--pattern-graph); border: 1px solid var(--surface-3); border-radius: var(--radius-2); box-shadow: var(--shadow-2); margin-block: var(--size-3);">
+          <h4 style="margin-block: var(--size-3);">graph</h4>
+        </div>
+        <div class="row" style="background: var(--pattern-brick); border: 1px solid var(--surface-3); border-radius: var(--radius-2); box-shadow: var(--shadow-2); margin-block: var(--size-3);">
+          <h4 style="margin-block: var(--size-3);">brick</h4>
+        </div>
+        <div class="row" style="background: var(--pattern-gears); border: 1px solid var(--surface-3); border-radius: var(--radius-2); box-shadow: var(--shadow-2); margin-block: var(--size-3);">
+          <h4 style="margin-block: var(--size-3);">gears</h4>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <h3>lists</h3>
+        </div>
+        <div class="row">
+          <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ol>
+          <ul>
+            <li>item a</li>
+            <li>item b</li>
+            <li>item c</li>
+          </ul>
+        </div>
+      </section> -->
     </article>
   </main>
   <footer style="
@@ -55,8 +125,8 @@
         padding: 1rem;
         width: 100%;
       ">
-    <a href="https://github.com/twsau" style="color: var(--accent); text-decoration-color: var(--accent);">twsau</span>
-      <a href="https://bossweb.dev">bossweb.dev</a>
+    <a href="https://github.com/twsau">twsau</span>
+    <a href="https://bossweb.dev">bossweb.dev</a>
   </footer>
 </body>
 

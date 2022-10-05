@@ -4,7 +4,9 @@ const autoprefixer = require("autoprefixer");
 const fs = require("fs");
 
 const minifyCss = async (css) => {
-  const output = await postcss([cssnano, autoprefixer]).process(css);
+  const output = await postcss([cssnano, autoprefixer]).process(css, {
+    from: undefined,
+  });
   const minifiedCss = await output;
   return minifiedCss;
 };

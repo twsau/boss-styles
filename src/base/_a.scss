@@ -1,0 +1,6 @@
+:where(a):where([href]) {
+  text-decoration-color: var(--link);
+}
+:where(a):where([href]):where(:visited) {
+  text-decoration-color: var(--link);
+}
