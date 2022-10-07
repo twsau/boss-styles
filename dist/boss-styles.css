@@ -1245,15 +1245,15 @@ span.icon {
   --text-1: #2e3440;
   --text-2: #3b4252;
   --text-3: #434c5e;
-  --primary-1: #8fbcbb;
-  --primary-2: #88c0d0;
-  --primary-3: #81a1c1;
-  --primary-4: #5e81ac;
-  --error: #bf616a;
-  --warning: #d08770;
-  --accent: #ebcb8b;
-  --success: #a3be8c;
-  --info: #b48ead;
+  --primary-1: hsl(179, 25%, 55%);
+  --primary-2: hsl(193, 43%, 57%);
+  --primary-3: hsl(210, 34%, 53%);
+  --primary-4: hsl(213, 32%, 42%);
+  --error: hsl(354, 42%, 56%);
+  --warning: hsl(14, 51%, 53%);
+  --accent: hsl(40, 71%, 40%);
+  --success: hsl(92, 28%, 45%);
+  --info: hsl(311, 20%, 53%);
   --link: var(--primary-4);
   --link-visited: var(--primary-4);
 }
