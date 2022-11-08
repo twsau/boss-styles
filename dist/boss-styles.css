@@ -301,7 +301,7 @@ span.icon {
 }
 
 :where(li, dd, figcaption) {
-  max-inline-size: var(--size-content-2);
+  max-inline-size: var(--size-content-3);
 }
 
 :where(p) {
