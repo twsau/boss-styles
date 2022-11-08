@@ -1,10 +1,26 @@
 h1 {
-  color: var(--text-3);
+  color: var(--error);
 }
 
 h2 {
-  color: var(--text-2);
+  color: var(--accent);
   font-family: var(--font-serif);
+}
+
+h3 {
+  color: var(--success);
+}
+
+h4 {
+  color: var(--info);
+}
+
+h5 {
+  color: var(--primary-1);
+}
+
+h6 {
+  color: var(--primary-3);
 }
 
 :where(h1, h2, h3, h4, h5, h6) {

@@ -36,12 +36,72 @@
   </header>
   <main>
     <article>
+      <svg shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.1"
+        viewBox="0 0 96.443 107.16" xmlns="http://www.w3.org/2000/svg">
+        <path d="m32.148 0-5.3594 8.9297-5.3574 8.9297h21.432l5.3574-8.9297 5.3594-8.9297h-10.717z" fill="#434c5e"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m21.432 17.859-10.715 17.859 10.715 17.859 5.3574-8.9297 5.3594-8.9297z" fill="#3b4252"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m21.432 17.859 10.717 17.859h21.432l-10.717-17.859h-10.715z" fill="#4c566a"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m32.148 35.719-5.3594 8.9297-5.3574 8.9297h21.432l5.3574-8.9297 5.3594-8.9297h-10.717z" fill="#434c5e"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m64.295 17.859-10.715 17.859 10.715 17.859 5.3574-8.9297 5.3594-8.9297z" fill="#3b4252"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m64.295 17.859 10.717 17.859h21.432l-10.717-17.859h-10.715z" fill="#4c566a"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m75.012 35.719-5.3594 8.9297-5.3574 8.9297h21.432l5.3574-8.9297 5.3594-8.9297h-10.717z" fill="#434c5e"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m21.432 53.578 10.717 17.859h21.432l-10.717-17.859h-10.715z" fill="#4c566a"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m21.432 53.578-10.715 17.859 10.715 17.861 10.717 17.859 10.715-17.859-10.715-17.861z" fill="#3b4252"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m0 89.299 10.717 17.859h21.432l-10.717-17.859h-10.715z" fill="#4c566a"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m64.295 53.578 10.717 17.859h21.432l-10.717-17.859h-10.715z" fill="#4c566a"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m64.295 53.578-10.715 17.859 10.715 17.861 10.717 17.859 10.715-17.859-10.715-17.861z" fill="#3b4252"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+        <path d="m42.863 89.299 10.717 17.859h21.432l-10.717-17.859h-10.715z" fill="#4c566a"
+          vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline"></path>
+      </svg>
+      <style>
+        svg {
+          height: 8rem;
+          width: 8rem;
+          inset: var(--size-3) 0 0 var(--size-3);
+          position: fixed;
+          z-index: 9999;
+        }
+
+        @media(max-width: 1300px) {
+          svg {
+            display: none;
+          }
+        }
+
+        path {
+          /* stroke: var(--surface-4); */
+          stroke: transparent;
+        }
+
+        svg.--current>path {
+          /* stroke: var(--text-3); */
+        }
+
+        @media (prefers-color-scheme: light) {
+          path {
+            filter: desaturate() invert();
+          }
+        }
+      </style>
       <section>
         <div class="row">
-          <h1 class="mobile-hide">it's mostly <a href="https://open-props.style/">open-props</a></h1>
+          <h1><a href="https://nordtheme.com">nord</a> / <a href="https://open-props.style/">open-props</a></h1>
         </div>
         <div class="row">
-          <code>https://twsau.github.io/boss-styles/dist/boss-styles.min.css</code>
+          <code
+            style="white-space: normal;">&ltlink rel="stylesheet" href="https://twsau.github.io/boss-styles/dist/boss-styles.min.css"/&gt</code>
         </div>
       </section>
       <section>
@@ -54,19 +114,74 @@
           <a download href="./dist/boss-styles.min.css">minified</a>
         </div>
       </section>
-      <!-- <hr>
+      <hr>
       <section>
-        <div class="row">
-          <h3>buttons</h3>
-        </div>
-        <div class="row">
-          <button class="error">error</button>
-          <button class="warning">warning</button>
-          <button class="success">success</button>
-          <button class="info">info</button>
-        </div>
+        <h3>headings</h3>
+        <label>
+          heading 1
+          <h1>heading 1</h1>
+        </label>
+        <label>
+          heading 2
+          <h2>heading 2</h2>
+        </label>
+        <label>
+          heading 3
+          <h3>heading 3</h3>
+        </label>
+        <label>
+          heading 4
+          <h4>heading 4</h4>
+        </label>
+        <label>
+          heading 5
+          <h5>heading 5</h5>
+        </label>
+        <label>
+          heading 6
+          <h6>heading 6</h6>
+        </label>
       </section>
       <section>
+        <h3>buttons</h3>
+        </div>
+        <label>
+          error button
+          <button class="error">click me!</button>
+        </label>
+        <label>
+          warning button
+          <button class="warning">click me!</button>
+        </label>
+        <label>
+          success button
+          <button class="success">click me!</button>
+        </label>
+        <label>
+          info button
+          <button class="info">click me!</button>
+        </label>
+      </section>
+      <section>
+        <h3>lists</h3>
+        <label>
+          unordered list
+          <ul>
+            <li>item a</li>
+            <li>item b</li>
+            <li>item c</li>
+          </ul>
+        </label>
+        <label>
+          ordered list
+          <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ol>
+        </label>
+      </section>
+      <!-- <section>
         <div class="row">
           <h3>labels / inputs</h3>
         </div>
@@ -99,23 +214,6 @@
         <div class="row" style="background: var(--pattern-gears); border: 1px solid var(--surface-3); border-radius: var(--radius-2); box-shadow: var(--shadow-2); margin-block: var(--size-3);">
           <h4 style="margin-block: var(--size-3);">gears</h4>
         </div>
-      </section>
-      <section>
-        <div class="row">
-          <h3>lists</h3>
-        </div>
-        <div class="row">
-          <ol>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-          </ol>
-          <ul>
-            <li>item a</li>
-            <li>item b</li>
-            <li>item c</li>
-          </ul>
-        </div>
       </section> -->
     </article>
   </main>
@@ -126,7 +224,7 @@
         width: 100%;
       ">
     <a href="https://github.com/twsau">twsau</span>
-    <a href="https://bossweb.dev">bossweb.dev</a>
+      <a href="https://bossweb.dev">bossweb.dev</a>
   </footer>
 </body>
 
