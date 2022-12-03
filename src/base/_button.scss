@@ -1,20 +1,17 @@
 button {
-  background-color: var(--_bg);
+  background-color: var(--surface-1);
+  color: var(--text-1);
 
-  &.error {
-    --_border: var(--error);
+  &[type="button"] {
+    border-color: var(--primary-1);
   }
 
-  &.warning {
-    --_border: var(--warning);
+  &[type="submit"] {
+    border-color: var(--success);
   }
 
-  &.success {
-    --_border: var(--success);
-  }
-
-  &.info {
-    --_border: var(--info);
+  &[type="reset"] {
+    border-color: var(--error);
   }
 
   &:active {

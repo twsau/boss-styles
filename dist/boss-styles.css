@@ -1267,19 +1267,17 @@ span.icon {
 }
 
 button {
-  background-color: var(--_bg);
+  background-color: var(--surface-1);
+  color: var(--text-1);
 }
-button.error {
-  --_border: var(--error);
+button[type=button] {
+  border-color: var(--primary-1);
 }
-button.warning {
-  --_border: var(--warning);
+button[type=submit] {
+  border-color: var(--success);
 }
-button.success {
-  --_border: var(--success);
-}
-button.info {
-  --_border: var(--info);
+button[type=reset] {
+  border-color: var(--error);
 }
 button:active {
   filter: brightness(0.9);
