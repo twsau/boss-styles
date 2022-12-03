@@ -12,10 +12,14 @@
     "cssnano": "^5.1.13",
     "live-server": "^1.2.2",
     "postcss": "^8.4.16",
+    "pre-commit": "^1.2.2",
     "sass": "^1.54.8"
   },
   "scripts": {
     "build": "sass src/boss-styles.scss dist/boss-styles.css && node minify.js",
     "dev": "concurrently \"sass --watch src/boss-styles.scss dist/boss-styles.css\" \"node serve.js\""
-  }
+  },
+  "pre-commit": [
+    "build"
+  ]
 }
